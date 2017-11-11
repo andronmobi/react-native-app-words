@@ -9,8 +9,11 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  FlatList
 } from 'react-native';
+
+import MyList from  "./app/components/MyList"
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -32,6 +35,9 @@ export default class App extends Component<{}> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        <MyList
+          data={[{id: 0, title: 'Vache'}, {id: 1, title: 'Cochon'}]}
+        />
       </View>
     );
   }
