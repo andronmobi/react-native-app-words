@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 
 import MyList from  "./app/components/MyList"
+import ColorText from  "./app/components/ColorText"
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -22,21 +23,20 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
+const animals = [
+  {id: 0, title: 'Vache'},
+  {id: 1, title: 'Cochon'},
+  {id: 2, title: 'Crocodile'},
+  {id: 3, title: 'Pigeon'},
+  {id: 4, title: 'Lion'}
+];
+
 export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
         <MyList
-          data={[{id: 0, title: 'Vache'}, {id: 1, title: 'Cochon'}]}
+          data={animals}
         />
       </View>
     );
@@ -48,16 +48,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+    backgroundColor: '#ffd700',
+    padding: 20,
   },
 });

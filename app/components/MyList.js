@@ -7,24 +7,19 @@ import {
   FlatList
 } from 'react-native';
 import Button from 'react-native-button';
+import ColorText from "./ColorText";
 
 class MyListItem extends React.PureComponent {
   _onPress = () => {
     this.props.onPressItem(this.props.id);
   };
 
-  test() {
-    var t = [];
-    t.push(<Text style={{color : 'red'}}>a</Text>);
-    t.push(<Text style={{color : 'blue'}}>b</Text>);
-    return t;
-  }
-
   render() {
     return (
       <Button
         onPress={this._onPress}
-        containerStyle={styles.mybuttoncontainer}>{this.props.title}
+        containerStyle={styles.mybuttoncontainer}>
+        <ColorText>{this.props.title}</ColorText>
       </Button>
     )
   }
@@ -75,7 +70,7 @@ const styles = StyleSheet.create({
     height: 45,
     overflow: 'hidden',
     borderRadius: 4,
-    backgroundColor: '#555555',
+    backgroundColor: '#F5FCFF',
   },
   mybutton: {
     fontSize: 20,
