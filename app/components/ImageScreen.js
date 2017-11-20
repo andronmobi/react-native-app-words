@@ -17,8 +17,13 @@ export default class ImageScreen extends Component {
       <View style={styles.container}>
         <Image
           source={require('../img/vache.jpg')}
-          style={{ height: 200, left: 0, right: 0 }}
           resizeMode="contain"
+          style={{
+            flex: 1,
+            alignSelf: 'stretch',
+            width: null,
+            height: null,
+          }}
         />
         <ColorText style={styles.welcome}>{this.props.navigation.state.params.user}</ColorText>
       </View>
@@ -31,7 +36,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#ffd700',
+    backgroundColor: '#ffffff',
     padding: 20,
   },
 });

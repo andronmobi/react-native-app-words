@@ -14,7 +14,6 @@ import {
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import MyList from  "./app/components/MyList"
-import ColorText from  "./app/components/ColorText"
 import ImageScreen from  "./app/components/ImageScreen"
 
 const animals = [
@@ -32,7 +31,6 @@ class HomeScreen extends Component {
 
   render() {
     const { navigate } = this.props.navigation;
-    //this.navigate = this.props.navigation.navigate;
     return (
       <View style={styles.container}>
         <MyList
@@ -59,7 +57,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#ffd700',
+    backgroundColor: '#ffffff',
     padding: 20,
   },
 });

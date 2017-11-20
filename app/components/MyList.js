@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     height: 45,
     overflow: 'hidden',
     borderRadius: 4,
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#e7e7e7',
   },
   mybutton: {
     fontSize: 20,
