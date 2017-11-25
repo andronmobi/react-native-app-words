@@ -5,18 +5,23 @@ import {
   View
 } from 'react-native';
 import ColorText from "./ColorText";
+import Images from './Images';
 
 export default class ImageScreen extends Component {
   static navigationOptions = ({navigation}) => ({
-    title: "Animal",
+    title: "Image",
   });
 
+  constructor() {
+    super();
+    this.fileName = '../res/img/airplane.png';// + this.props.navigation.state.params.item["image"];
+  }
   render() {
     const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
         <Image
-          source={require('../img/vache.jpg')}
+          source={Images[this.props.navigation.state.params.item["name"]]}
           resizeMode="contain"
           style={{
             flex: 1,
@@ -25,7 +30,7 @@ export default class ImageScreen extends Component {
             height: null,
           }}
         />
-        <ColorText style={styles.welcome}>{this.props.navigation.state.params.user}</ColorText>
+        <ColorText style={styles.welcome}>{this.props.navigation.state.params.item["name_fr"]}</ColorText>
       </View>
     );
   }

@@ -1,0 +1,109 @@
+{
+  "items": [
+    {
+      "name": "airplane",
+      "name_fr": "avion",
+      "name_ru": "самолет"
+    },
+    {
+      "name": "bus",
+      "name_fr": "bus",
+      "name_ru": "автобус"
+    },
+    {
+      "name": "squirrel",
+      "name_fr": "ecureuil",
+      "name_ru": "самолет"
+    },
+    {
+      "name": "grenouille",
+      "name_fr": "frog",
+      "name_ru": "автобус"
+    },
+    {
+      "name": "ordinateur",
+      "name_fr": "computer",
+      "name_ru": "самолет"
+    },
+    {
+      "name": "scooter",
+      "name_fr": "scooter",
+      "name_ru": "автобус"
+    },
+    {
+      "name": "train",
+      "name_fr": "train",
+      "name_ru": "самолет"
+    },
+    {
+      "name": "car",
+      "name_fr": "voiture",
+      "name_ru": ""
+    },
+    {
+      "name": "shoes",
+      "name_fr": "chaussures",
+      "name_ru": ""
+    },
+    {
+      "name": "elephant",
+      "name_fr": "elephant",
+      "name_ru": ""
+    },
+    {
+      "name": "lion",
+      "name_fr": "lion",
+      "name_ru": ""
+    },
+    {
+      "name": "pigeon",
+      "name_fr": "pigeon",
+      "name_ru": ""
+    },
+    {
+      "name": "phone",
+      "name_fr": "telephone",
+      "name_ru": ""
+    },
+    {
+      "name": "cow",
+      "name_fr": "vache",
+      "name_ru": ""
+    },
+    {
+      "name": "truck",
+      "name_fr": "camion",
+      "name_ru": ""
+    },
+    {
+      "name": "dog",
+      "name_fr": "chien",
+      "name_ru": ""
+    },
+    {
+      "name": "giraffe",
+      "name_fr": "giraffe",
+      "name_ru": ""
+    },
+    {
+      "name": "wolf",
+      "name_fr": "loup",
+      "name_ru": ""
+    },
+    {
+      "name": "rhinoceros",
+      "name_fr": "rhinoceros",
+      "name_ru": ""
+    },
+    {
+      "name": "turtle",
+      "name_fr": "tortue",
+      "name_ru": ""
+    },
+    {
+      "name": "bicycle",
+      "name_fr": "velo",
+      "name_ru": ""
+    },
+  ]
+}

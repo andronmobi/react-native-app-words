@@ -29,12 +29,21 @@ class HomeScreen extends Component {
     title: 'Nikitos',
   };
 
+  constructor() {
+    super();
+    var config = require('./app/res/config.json');
+    this.items = config.items;
+    for (var i = 0; i < this.items.length; i++) {
+      this.items[i].id = i;
+    }
+  }
+
   render() {
     const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
         <MyList
-          data={animals} navigate={navigate}
+          data={this.items} navigate={navigate}
         />
       </View>
     );

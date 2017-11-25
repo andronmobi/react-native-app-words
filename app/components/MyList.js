@@ -11,7 +11,7 @@ import ColorText from "./ColorText";
 
 class MyListItem extends React.PureComponent {
   _onPress = () => {
-    this.props.onPressItem(this.props.id, this.props.title);
+    this.props.onPressItem(this.props.id);
   };
 
   render() {
@@ -30,9 +30,9 @@ export default class MyList extends React.PureComponent {
 
   _keyExtractor = (item, index) => item.id;
 
-  _onPressItem = (id: string, title: string) => {
+  _onPressItem = (id) => {
     console.log("item: " + id);
-    this.props.navigate('ImageScreen', { user: title})
+    this.props.navigate('ImageScreen', { item: this.props.data[id]})
     // updater functions are preferred for transactional updates
     this.setState((state) => {
       // copy the map rather than modifying state.
@@ -47,7 +47,7 @@ export default class MyList extends React.PureComponent {
       id={item.id}
       onPressItem={this._onPressItem}
       selected={!!this.state.selected.get(item.id)}
-      title={item.title}
+      title={item["name_fr"]}
     />
   );
 
