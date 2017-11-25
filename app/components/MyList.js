@@ -14,12 +14,17 @@ class MyListItem extends React.PureComponent {
     this.props.onPressItem(this.props.id);
   };
 
+  constructor() {
+    super();
+    this.lang = "ru";
+  }
+
   render() {
     return (
       <Button
         onPress={this._onPress}
         containerStyle={styles.mybuttoncontainer}>
-        <ColorText>{this.props.title}</ColorText>
+        <ColorText lang={this.lang}>{this.props.title}</ColorText>
       </Button>
     )
   }
@@ -47,7 +52,7 @@ export default class MyList extends React.PureComponent {
       id={item.id}
       onPressItem={this._onPressItem}
       selected={!!this.state.selected.get(item.id)}
-      title={item["name_fr"]}
+      title={item["name_ru"]}
     />
   );
 
@@ -70,8 +75,8 @@ const styles = StyleSheet.create({
   },
   mybuttoncontainer: {
     margin: 5,
-    marginLeft:110,
-    marginRight:110,
+    marginLeft:105,
+    marginRight:105,
     padding: 10,
     height: 50,
     overflow: 'hidden',

@@ -18,5 +18,5 @@ exports.cow = require('../res/img/cow.png');
 exports.frog = require('../res/img/frog.png');
 exports.computer = require('../res/img/computer.png');
 exports.scooter = require('../res/img/scooter.png');
-exports.telephone = require('../res/img/telephone.png');
+exports.phone = require('../res/img/phone.png');
 exports.turtle = require('../res/img/turtle.png');

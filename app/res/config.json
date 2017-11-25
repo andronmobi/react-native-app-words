@@ -13,97 +13,97 @@
     {
       "name": "squirrel",
       "name_fr": "ecureuil",
-      "name_ru": "самолет"
+      "name_ru": "белка"
     },
     {
-      "name": "grenouille",
-      "name_fr": "frog",
-      "name_ru": "автобус"
+      "name": "frog",
+      "name_fr": "grenouille",
+      "name_ru": "лягушка"
     },
     {
-      "name": "ordinateur",
-      "name_fr": "computer",
-      "name_ru": "самолет"
+      "name": "computer",
+      "name_fr": "ordinateur",
+      "name_ru": "компьютер"
     },
     {
       "name": "scooter",
       "name_fr": "scooter",
-      "name_ru": "автобус"
+      "name_ru": "скутер"
     },
     {
       "name": "train",
       "name_fr": "train",
-      "name_ru": "самолет"
+      "name_ru": "поезд"
     },
     {
       "name": "car",
       "name_fr": "voiture",
-      "name_ru": ""
+      "name_ru": "машина"
     },
     {
       "name": "shoes",
       "name_fr": "chaussures",
-      "name_ru": ""
+      "name_ru": "ботинки"
     },
     {
       "name": "elephant",
       "name_fr": "elephant",
-      "name_ru": ""
+      "name_ru": "слон"
     },
     {
       "name": "lion",
       "name_fr": "lion",
-      "name_ru": ""
+      "name_ru": "лев"
     },
     {
       "name": "pigeon",
       "name_fr": "pigeon",
-      "name_ru": ""
+      "name_ru": "голубь"
     },
     {
       "name": "phone",
       "name_fr": "telephone",
-      "name_ru": ""
+      "name_ru": "телефон"
     },
     {
       "name": "cow",
       "name_fr": "vache",
-      "name_ru": ""
+      "name_ru": "корова"
     },
     {
       "name": "truck",
       "name_fr": "camion",
-      "name_ru": ""
+      "name_ru": "грузовик"
     },
     {
       "name": "dog",
       "name_fr": "chien",
-      "name_ru": ""
+      "name_ru": "собака"
     },
     {
       "name": "giraffe",
       "name_fr": "giraffe",
-      "name_ru": ""
+      "name_ru": "жираф"
     },
     {
       "name": "wolf",
       "name_fr": "loup",
-      "name_ru": ""
+      "name_ru": "волк"
     },
     {
       "name": "rhinoceros",
       "name_fr": "rhinoceros",
-      "name_ru": ""
+      "name_ru": "носорог"
     },
     {
       "name": "turtle",
       "name_fr": "tortue",
-      "name_ru": ""
+      "name_ru": "черепаха"
     },
     {
       "name": "bicycle",
       "name_fr": "velo",
-      "name_ru": ""
-    },
+      "name_ru": "велосипед"
+    }
   ]
 }

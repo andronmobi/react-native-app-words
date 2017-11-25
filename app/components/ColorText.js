@@ -6,26 +6,43 @@ import {
 
 export default class ColorText extends React.Component<{}> {
 
-  _getColor(char) {
+  _getColor(char, lang) {
     var color = "blue";
-    switch (char) {
-      case 'a':
-      case 'e':
-      case 'i':
-      case 'o':
-      case 'u':
-      case 'y':
-        color = "red";
-        break;
+    if (lang === "ru") {
+      switch (char.toLowerCase()) {
+        case 'а':
+        case 'е':
+        case 'и':
+        case 'э':
+        case 'о':
+        case 'у':
+        case 'ы':
+        case 'ё':
+        case 'ю':
+        case 'я':
+          color = "red";
+          break;
+      }
+    } else {
+      switch (char) {
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        case 'y':
+          color = "red";
+          break;
+      }
     }
     return color;
   }
 
-  _getColoredText(str) {
+  _getColoredText(str, lang) {
     var i = 0;
     var charArr = str.split("");
     var tagArr = charArr.map((char) =>
-      <Text key={i++} style={{color : this._getColor(char)}}>{char}</Text>
+      <Text key={i++} style={{color : this._getColor(char, lang)}}>{char.toUpperCase()}</Text>
     );
     return tagArr;
   }
@@ -33,7 +50,7 @@ export default class ColorText extends React.Component<{}> {
   render() {
     return (
       <Text style={styles.mycolortext}>
-        {this._getColoredText(this.props.children)}
+        {this._getColoredText(this.props.children, this.props.lang)}
       </Text>
     );
   }
