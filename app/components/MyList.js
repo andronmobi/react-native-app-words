@@ -54,6 +54,7 @@ export default class MyList extends React.PureComponent {
   render() {
     return (
       <FlatList
+        style={styles.listcontainer}
         data={this.props.data}
         extraData={this.state}
         keyExtractor={this._keyExtractor}
@@ -64,16 +65,17 @@ export default class MyList extends React.PureComponent {
 }
 
 const styles = StyleSheet.create({
+  listcontainer: {
+    width: "100%",
+  },
   mybuttoncontainer: {
     margin: 5,
+    marginLeft:110,
+    marginRight:110,
     padding: 10,
-    width: 200,
-    height: 45,
+    height: 50,
     overflow: 'hidden',
     borderRadius: 4,
     backgroundColor: '#e7e7e7',
-  },
-  mybutton: {
-    fontSize: 20,
   },
 });

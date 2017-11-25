@@ -20,4 +20,3 @@ exports.computer = require('../res/img/computer.png');
 exports.scooter = require('../res/img/scooter.png');
 exports.telephone = require('../res/img/telephone.png');
 exports.turtle = require('../res/img/turtle.png');
-+-
